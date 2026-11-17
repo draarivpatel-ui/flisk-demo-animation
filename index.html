@@ -15,7 +15,7 @@
     .frame{width:100vw;height:100vh;padding:16px;display:grid;grid-template-rows:auto 1fr;gap:12px}
     header{display:flex;justify-content:space-between;align-items:center;border:1px solid var(--line);border-radius:10px;background:rgba(7,9,13,.72);backdrop-filter:blur(18px);padding:10px 14px}
     .brand{display:flex;gap:10px;align-items:center}.mark{width:32px;height:32px;border-radius:50%;background:var(--text);color:#07090d;display:grid;place-items:center;font-weight:900;font-size:11px}
-    h1{margin:0;font-size:clamp(18px,2.2vw,32px);line-height:.95;letter-spacing:0}.sub{color:var(--muted);font-size:11px;margin-top:4px}.badge{font:700 11px var(--mono);color:var(--green);border:1px solid rgba(157,245,143,.38);border-radius:999px;padding:6px 10px;white-space:nowrap}
+    h1{margin:0;font-size:clamp(18px,2.2vw,32px);line-height:.95;letter-spacing:0}.sub{color:var(--muted);font-size:11px;margin:4px 0 0}.cta{color:var(--green);font-weight:700;text-decoration:underline}.badge{font:700 11px var(--mono);color:var(--green);border:1px solid rgba(157,245,143,.38);border-radius:999px;padding:6px 10px;white-space:nowrap}
     .screen{min-height:0;display:grid;grid-template-columns:1.05fr .95fr;grid-template-rows:1fr 1fr;gap:10px;grid-template-areas:"terminal browser" "folder health"}
     .panel{border:1px solid var(--line);border-radius:10px;background:var(--panel);box-shadow:0 26px 70px rgba(0,0,0,.38);overflow:hidden;position:relative}.head{height:32px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 12px;color:#dbe7f2;font:800 10px var(--mono);text-transform:uppercase}
     .pulse{width:56px;height:5px;border-radius:99px;background:rgba(255,255,255,.08);overflow:hidden}.pulse:after{content:"";display:block;width:36%;height:100%;border-radius:inherit;background:linear-gradient(90deg,var(--cyan),var(--green));animation:pulse 2.4s infinite ease-in-out}@keyframes pulse{50%{transform:translateX(185%)}}
@@ -30,7 +30,7 @@
 </head>
 <body>
   <main class="frame">
-    <header><div class="brand"><div class="mark">flisk</div><div><h1>Curl to health check, in one take.</h1><div class="sub">End-to-end recording frame: install, generate, inspect, open URL, verify health.</div></div></div><div class="badge">Recording demo ready</div></header>
+    <header><div class="brand"><div class="mark">flisk</div><div><h1>Install Flisk and see your app running in one take.</h1><p class="sub">For developers new to Flisk: watch a small shop go from install to a working health check. <a class="cta" href="https://flisk.sh/">Try it on your computer</a></p></div></div><div class="badge">Recording demo ready</div></header>
     <section class="screen">
       <article class="panel terminal"><div class="head"><span>Terminal: install and generate</span><span class="pulse"></span></div><div class="term">
         <div class="line" style="--i:0"><span class="prompt">$</span> curl -fsSL https://flisk.sh/install.sh | sh</div>
